@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../assets/styles/login.css">
+<script src="../login.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="../assets/images/gems.png"></a>  
+        <nav>
+            <a href="./login.html">Ingresar</a>
+            <a href="./juego.html">Jugar</a>
+            <div class="dropdown">
+                <button class="dropbtn">Sobre el juego
+                </button>
+                <div class="dropdown-content">
+                    <a href="./personajes.html">Personajes</a>
+                    <a href="./reglas.html">Reglas</a>
+                    <a href="./sobre_nosotros.html">Sobre nosotros</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <img src="../assets/images/banner.png" alt="banner-bg">
+    </div>
+    <div class="logo">
+        <img src="../assets/images/unete.png">
+    </div>
+    <form class="login" action="" method="GET">
+        <div class="container">
+          <label for="uname">Email</label>
+          <input type="text" placeholder="Ingrese nombre de usuario" id="email" name="email" required>
+      
+          <label for="psw">Contraseña</label>
+          <input type="password" placeholder="Ingrese contraseña" name="password" id="password" required>
+      
+          <button type="button" value="Ingresar" id="buttonLogin">Ingresar</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Permanecer conectado
+          </label>
+        </div>
+      
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancelar</button>
+          <span class="psw"><a href="#">Olvidé mi contraseña</a></span>
+        </div>
+    </form>
+
+
+    <form class="signin" action="signin.html">
+        <div class="container">
+            <button type="submit">Crear cuenta</button>
+        </div>
+    </form>
+</body>
+</html>

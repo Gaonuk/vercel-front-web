@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../assets/styles/signin.css">
+<script src="../session.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="../assets/images/gems.png"></a>  
+        <nav>
+            <a href="./login.html">Ingresar</a>
+            <a href="./juego.html">Jugar</a>
+            <div class="dropdown">
+                <button class="dropbtn">Sobre el juego
+                </button>
+                <div class="dropdown-content">
+                    <a href="./personajes.html">Personajes</a>
+                    <a href="./reglas.html">Reglas</a>
+                    <a href="./sobre_nosotros.html">Sobre nosotros</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="banner">
+        <img src="../assets/images/banner.png" alt="banner-bg">
+    </div>
+    <div class="logo">
+        <img src="../assets/images/logo-1.png">
+    </div>
+    <form action="" method="GET" name="userForm">
+        <div class="container">
+          <label for="uname">Nombre de usuario</label>
+          <input type="text" placeholder="Ingrese nombre de usuario" name="username" id="username" required>
+
+          <label for="umail">Mail</label>
+          <input type="text" placeholder="Ingrese su mail" name="email" id="email" required>
+      
+          <label for="psw">Contraseña</label>
+          <input type="password" placeholder="Ingrese contraseña" name="password" id="password" required>
+
+          <button type="button" id="buttonLogin">Ingresar</button>
+        </div>
+      
+        <div class="container">
+          <button type="button" class="cancelbtn">Cancelar</button>
+        </div>
+    </form>
+
+
+
+</body>
+</html>

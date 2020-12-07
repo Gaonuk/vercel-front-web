@@ -1,0 +1,210 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Juego</title>
+    <link rel="stylesheet" href="../assets/styles/juego.css" />
+    <script src="./../jugada.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"><img src="../assets/images/gems.png"></a>  
+      <nav>
+        <a href="#" id="sessionButton">Desconectarse</a>
+        <a href="#">Jugar</a>
+        <div class="dropdown">
+          <button class="dropbtn">Sobre el juego</button>
+          <div class="dropdown-content">
+            <a href="./personajes.html">Personajes</a>
+            <a href="./reglas.html">Reglas</a>
+            <a href="./sobre_nosotros.html">Sobre nosotros</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="actions">
+      <button id="ButSend">Enviar Jugada</button>
+      <button>Salir</button>
+    </div>
+    <div class="game">
+      <div class="team">Equipo
+        <div id="team-imgs">
+          <img id="t1" src='../assets/images/bbb.png'>
+          <img id="t2" src='../assets/images/bbb.png'>
+          <img id="t3" src='../assets/images/bbb.png'>
+        </div>
+      </div>
+      <div class="progress">Mi progreso
+        <div>
+          <img id="gem1" src='../assets/images/bbb.png'>
+          <img id="gem2" src='../assets/images/bbb.png'>
+          <img id="gem3" src='../assets/images/bbb.png'>
+          <img id="gem4" src='../assets/images/bbb.png'>
+          <img id="gem5" src='../assets/images/bbb.png'>
+        </div>
+      </div>
+      <div class="team-stats">Estadisticas
+        <div class="stat"></div>
+        <div class="stat" id="H">HP: 100</div>
+        <div class="stat" id="X">XP: 0</div>
+        <div class="stat" id="A">Ataque: 10</div>
+        <div class="stat" id="D">Defensa: 10</div>
+        <div class="stat" id="S">Special: 0</div>
+        <div class="stat"></div>
+        <div class="stat" id="E"></div>
+      </div>
+      <div id="mochila" class="backpack">
+        Mochila
+        <div class="backpack-space">
+          <div id="d1"><img id="m1" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d2"><img id="m2" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d3"><img id="m3" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d4"><img id="m4" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d5"><img id="m5" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d6"><img id="m6" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d7"><img id="m7" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d8"><img id="m8" class="mm" src='../assets/images/bbb.png'></div>
+          <div id="d9"><img id="m9" class="mm" src='../assets/images/bbb.png'></div>
+        </div>
+        <div class="backpack-controls">
+          <button id="butUt">Utilizar</button>
+          <button id="butEl">Eliminar</button>
+        </div>
+      </div>
+      <div class="arsenal">Arsenal
+        <div id="ars-element">
+          <img id="ars1" src='../assets/images/bbb.png'>
+          <img id="ars2" src='../assets/images/bbb.png'>
+          <img id="ars3" src='../assets/images/bbb.png'>
+        </div>
+        <div><button id="butDes">Desequipar</button></div>
+      </div>
+      <div class="commands">
+        <button id="but1">Atacar</button>
+        <button id="but2">Recoger</button>
+        <button id="but3">Special</button>
+        <button id="but4">Base</button>
+      </div>
+      <div class="other-players">Otros jugadores</div>
+      <div class="game-area">
+        <div id="mapid1" class="map">
+          <div id="001" class="tile2"><img id="1" src='../assets/images/bbb.png'></div>
+          <div id="002" class="tile2"><img id="2" src='../assets/images/bbb.png'></div>
+          <div id="003" class="tile2"><img id="3" src='../assets/images/bbb.png'></div>
+          <div id="004" class="tile2"><img id="4" src='../assets/images/bbb.png'></div>
+          <div id="005" class="tile2"><img id="5" src='../assets/images/bbb.png'></div>
+          <div id="006" class="tile2"><img id="6" src='../assets/images/bbb.png'></div>
+          <div id="007" class="tile2"><img id="7" src='../assets/images/bbb.png'></div>
+          <div id="008" class="tile2"><img id="8" src='../assets/images/bbb.png'></div>
+          <div id="009" class="tile2"><img id="9" src='../assets/images/bbb.png'></div>
+          <div id="0010" class="tile2"><img id="10" src='../assets/images/bbb.png'></div>
+          <div id="0011" class="tile2"><img id="11" src='../assets/images/bbb.png'></div>
+          <div id="0012" class="tile2"><img id="12" src='../assets/images/bbb.png'></div>
+          <div id="0013" class="tile2"><img id="13" src='../assets/images/bbb.png'></div>
+          <div id="0014" class="tile2"><img id="14" src='../assets/images/bbb.png'></div>
+          <div id="0015" class="tile2"><img id="15" src='../assets/images/bbb.png'></div>
+          <div id="0016" class="tile2"><img id="16" src='../assets/images/bbb.png'></div>
+          <div id="0017" class="tile2"><img id="17" src='../assets/images/bbb.png'></div>
+          <div id="0018" class="tile2"><img id="18" src='../assets/images/bbb.png'></div>
+          <div id="0019" class="tile2"><img id="19" src='../assets/images/bbb.png'></div>
+          <div id="0020" class="tile2"><img id="20" src='../assets/images/bbb.png'></div>
+          <div id="0021" class="tile2"><img id="21" src='../assets/images/bbb.png'></div>
+          <div id="0022" class="tile2"><img id="22" src='../assets/images/bbb.png'></div>
+          <div id="0023" class="tile2"><img id="23" src='../assets/images/bbb.png'></div>
+          <div id="0024" class="tile2"><img id="24" src='../assets/images/bbb.png'></div>
+          <div id="0025" class="tile2"><img id="25" src='../assets/images/bbb.png'></div>
+          <div id="0026" class="tile2"><img id="26" src='../assets/images/bbb.png'></div>
+          <div id="0027" class="tile2"><img id="27" src='../assets/images/bbb.png'></div>
+          <div id="0028" class="tile2"><img id="28" src='../assets/images/bbb.png'></div>
+          <div id="0029" class="tile2"><img id="29" src='../assets/images/bbb.png'></div>
+          <div id="0030" class="tile2"><img id="30" src='../assets/images/bbb.png'></div>
+          <div id="0031" class="tile2"><img id="31" src='../assets/images/bbb.png'></div>
+          <div id="0032" class="tile2"><img id="32" src='../assets/images/bbb.png'></div>
+          <div id="0033" class="tile2"><img id="33" src='../assets/images/bbb.png'></div>
+          <div id="0034" class="tile2"><img id="34" src='../assets/images/bbb.png'></div>
+          <div id="0035" class="tile2"><img id="35" src='../assets/images/bbb.png'></div>
+          <div id="0036" class="tile2"><img id="36" src='../assets/images/bbb.png'></div>
+          <div id="0037" class="tile2"><img id="37" src='../assets/images/bbb.png'></div>
+          <div id="0038" class="tile2"><img id="38" src='../assets/images/bbb.png'></div>
+          <div id="0039" class="tile2"><img id="39" src='../assets/images/bbb.png'></div>
+          <div id="0040" class="tile2"><img id="40" src='../assets/images/bbb.png'></div>
+          <div id="0041" class="tile2"><img id="41" src='../assets/images/bbb.png'></div>
+          <div id="0042" class="tile2"><img id="42" src='../assets/images/bbb.png'></div>
+          <div id="0043" class="tile2"><img id="43" src='../assets/images/bbb.png'></div>
+          <div id="0044" class="tile2"><img id="44" src='../assets/images/bbb.png'></div>
+          <div id="0045" class="tile2"><img id="45" src='../assets/images/bbb.png'></div>
+          <div id="0046" class="tile2"><img id="46" src='../assets/images/bbb.png'></div>
+          <div id="0047" class="tile2"><img id="47" src='../assets/images/bbb.png'></div>
+          <div id="0048" class="tile2"><img id="48" src='../assets/images/bbb.png'></div>
+          <div id="0049" class="tile2"><img id="49" src='../assets/images/bbb.png'></div>
+        </div>
+        <div class="mapon">
+          <img id="mapon-img" src='../assets/images/bbb.png'>
+          <img id='mapon-obj' src='../assets/images/bbb.png'>
+        </div>
+      </div>
+    </div>
+
+    <div class="rules">
+      <h2>Reglas de Juego</h2>
+      <ul>
+        <li>5 gemas para ganar el juego</li>
+        <li>Equipos de maximo 3 personajes</li>
+        <li>
+          8 Personajes elegibles, cada uno con su especialidad, beneficios,
+          desventajas y ataques.
+        </li>
+        <li>Por cada jugador nuevo se agregan 3 gemas al mapa</li>
+        <li>
+          Las amenazas del mapa estan clasificadas en distintas categorias para
+          determinar su nivel, estas son: S, A, B, C y D (ORDEN DESCENDIENTE)
+        </li>
+        <li>
+          Los Personajes consumen energia cada cez que realizan una actividad,
+          ya sea moverse, pelear o usar un poder de personaje. La energia puede
+          ser recuperada esperando al siguiente turno o usando pociones. Las
+          habilidades heroicas de cada personaje no consumen energia pero solo
+          se pueden usar una vez cada cierta cantidad de turnos (cambia segun el
+          personajes).
+        </li>
+        <li>
+          Si todas las gemas del mapa son recogidas pero no hay ningun equipo
+          con 5 gemas, empieza un contador donde los jugadores deberan guiar a
+          sus equipos a pelear con los equipos de otros jugadores para obtener
+          sus gemas.
+        </li>
+        <li>
+          Si luego de que el contador acaba aun no hay ganador, se entra en modo
+          de muerte subita, un modo donde el mapa se achica y se fuerza a que
+          peleen los equipos con cantidad de gemas iguales, en este modo si un
+          equipo es herido no vuelve a su casilla ”zona cero”, el ultimo equipo
+          en pie sera el ganador de la partida.
+        </li>
+        <li>Las reglas de enfrentamiento son las siguientes:</li>
+        <ul>
+          <li>Los jugadores se enfrentan cuando estan en la misma casilla</li>
+          <li>
+            Los jugadores pueden escoger enfrentarse al jugador en la casilla o
+            no
+          </li>
+          <li>
+            Si empieza un enfrentamiento, los jugadores deberan elegir el orden
+            en el cual sus personajes van a efectuar sus ataques/habilidades.
+          </li>
+          <li>
+            Los jugadores escogeran todas las habilidades/ataques que sus
+            personajes usaran en el enfrentamiento siempre y cuando tenga
+            energia disponible para realizarlos
+          </li>
+          <li>
+            Una vez seleccionadas todas las habilidades/ataques de los equipos
+            de ambos personajes, estos procederan a efectuarse en el siguiente
+            orden: Equipo Defensor, Equipo Atacante.
+          </li>
+        </ul>
+      </ul>
+    </div>
+
+    <footer>© Busqueda Espacial - Runtime terror</footer>
+  </body>
+</html>
